@@ -1,17 +1,22 @@
 package com.example;
 
+import java.util.List;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import com.example1.Dependency1;
 
 @SpringBootApplication
 public class DemoApplication {
 	// comments added!!!!
 	// First branch created =====asfasd=!!!asasdfasd
-	/*First branch created!!!*/
-	/*4*/
+	/* First branch created!!! */
+	/* 4 */
 	public static void main(String[] args) {
-		SpringApplication.run(new Object[] { DemoApplication.class, Dependency1.class }, args);
+		SpringApplication.run(new Object[] { DemoApplication.class }, args);
+		System.out.println("Demo 1 ");
+		List<String> stringList=null;
+	}
+	private void test1() {
+		System.out.println("Test...");
 	}
 }
